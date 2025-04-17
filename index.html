@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réservation de rendez-vous</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./main.js"></script>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Réserver un rendez-vous</h1>
+    <form id="booking-form">
+      <div class="form-group">
+        <label for="name">Nom du client</label>
+        <input type="text" id="name" name="name"/>
+        <p id="name-error" class="error-message">Le nom doit contenir au moins 3 caractères et uniquement des lettres (minuscules ou majuscules de A à Z).</p>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Date du rendez-vous</label>
+        <input type="date" id="date" name="date"/>
+      </div>
+
+      <div class="form-group">
+        <label for="time">Heure du rendez-vous</label>
+        <input type="time" id="time" name="time"/>
+        <p id="time-error" class="error-message">Les rendez-vous sont disponibles uniquement entre 9h00 et 18h00.</p>
+      </div>
+
+      <div class="form-group">
+        <label for="participants">Nombre de participants</label>
+        <input type="number" id="participants" name="participants"/>
+      </div>
+
+      <button type="submit">Réserver</button>
+    </form>
+  </div>
+
+</body>
+</html>
