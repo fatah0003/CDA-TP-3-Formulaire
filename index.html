@@ -21,6 +21,7 @@
       <div class="form-group">
         <label for="date">Date du rendez-vous</label>
         <input type="date" id="date" name="date"/>
+        <p id="date-error" class="error-message">Ce créneau est déjà réservé.</p>
       </div>
 
       <div class="form-group">
@@ -32,6 +33,7 @@
       <div class="form-group">
         <label for="participants">Nombre de participants</label>
         <input type="number" id="participants" name="participants"/>
+        <p id="participants-error" class="error-message">Le nombre de participants doit être entre 1 et 10.</p>
       </div>
 
       <button type="submit">Réserver</button>
